@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #f4f1ea;
+  --color-foreground: #171717;
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  --font-script-cyrillic: var(--font-script-cyrillic);
+  --font-marck: var(--font-marck);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f4f1ea;
+  color: #171717;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  line-height: 1.65;
+}
+
+.invite-divider {
+  height: 0.5px;
+  background-color: #d6d3d1;
+}
+
+.shadow-editorial {
+  box-shadow: 0 12px 40px rgba(40, 30, 20, 0.03);
+}
+
+.font-serif {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+}
+
+.font-sans {
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+  letter-spacing: 0.06em;
+}
+
+.font-imperial {
+  font-family: var(--font-script-cyrillic), "Caveat", cursive;
+}
+
+.font-marck {
+  font-family: var(--font-marck), "Marck Script", cursive;
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.12);
+  color: #171717;
+}
