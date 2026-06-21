@@ -22,7 +22,7 @@ export function HeroBlock() {
       </div>
 
       <FadeIn className="px-6 pt-10 pb-6 text-center">
-        <p className="font-marck text-xl font-normal leading-[1.65] tracking-wide text-neutral-600 sm:text-2xl">
+        <p className="font-imperial text-xl font-normal leading-[1.65] tracking-wide text-neutral-600 sm:text-2xl">
           {t.guestText}
         </p>
       </FadeIn>

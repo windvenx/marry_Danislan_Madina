@@ -1,3 +1,5 @@
+/* 1. Импортируем шрифт из Google Fonts с поддержкой кириллицы */
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 @import "tailwindcss";
 
 @theme inline {
@@ -5,7 +7,9 @@
   --color-foreground: #171717;
   --font-serif: var(--font-serif);
   --font-sans: var(--font-sans);
-  --font-script-cyrillic: var(--font-script-cyrillic);
+  
+  /* 2. Меняем значение переменной на Bad Script */
+  --font-script-cyrillic: "Bad Script", cursive;
   --font-marck: var(--font-marck);
 }
 
@@ -42,8 +46,9 @@ body {
   letter-spacing: 0.06em;
 }
 
+/* 3. Теперь класс .font-imperial будет использовать Bad Script */
 .font-imperial {
-  font-family: var(--font-script-cyrillic), "Caveat", cursive;
+  font-family: var(--font-script-cyrillic);
 }
 
 .font-marck {
